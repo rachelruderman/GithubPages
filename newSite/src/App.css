@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+.container {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  font-family: 'Merriweather';
+  /*justify-content: center;*/
+}
+
+.item {
+  flex: 1;
+  color: gray;
+  font-weight: bold;
+}
+
+.item div {
+  font-size: 50px;
+  color: purple;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left img {
+  height: 30px;
+}
+
+.right {
+  background-color: green;
+}

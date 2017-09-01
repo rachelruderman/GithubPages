@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  font-family: 'Times New Roman';
+  /*justify-content: center;*/
+}
+
+.item {
+  flex: 1;
+  div {
+    color: blue;
+  }
+}
+
+.left {
+}
+
+.right {
+  background-color: green;
+}
