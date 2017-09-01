@@ -8,10 +8,18 @@ class App extends Component {
       <div className="App">
         <div className='container'>
             <div className='item left'>
-              Hi, I'm <div>Rachel Ruderman</div>
+              Hi, I'm <div className='name'>Rachel Ruderman</div> Full-Stack Web Developer
+              <br/><br/><br/><br/>
               <div className='icons'>
-                <img src='./linkedin.png' alt='linkedin logo'/>
-                <div>GitHub</div>
+                <a href='https://www.linkedin.com/in/rachelruderman/' target='_blank'>
+                  <img src='./linkedin.png' alt='linkedin logo'/>
+                </a>
+                <a href='https://github.com/rachelruderman' target='_blank'>
+                  <img src='./github.png' alt='github logo'/>
+                </a>
+                <a href='https://twitter.com/rathelina' target='_blank'>
+                  <img src='./twitter.png' alt='twitter logo'/>
+                </a>
               </div>
             </div>
             <div className='item right'>
