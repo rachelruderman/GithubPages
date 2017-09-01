@@ -3,6 +3,7 @@
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
   text-align: center;
   align-items: center;
@@ -90,7 +91,7 @@
 }
 
 .about .overlay {
-  background-color: rgba(224,123,50,0.6);
+  background-color: rgba(0,100,0,0.6);
 }
 
 .contact .overlay {
@@ -98,7 +99,7 @@
 }
 
 .portfolio .overlay {
-  background-color: rgba(0,100,0,0.6);
+  background-color: rgba(183,94,4,0.6);
 }
 
 .services .overlay {
@@ -107,6 +108,11 @@
 
 .overlay img {
   height: 50px;
+  transition: all 0.3s;
+}
+
+.overlay:hover img{
+  transform: scale(1.1);
 }
 
 .overlay div {
