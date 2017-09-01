@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <div className='container'>
             <div className='item left'>
-              Hi, I'm <div className='name'>Rachel Ruderman</div> Full-Stack Web Developer
+              Hi, I'm <div className='name'>Rachel Ruderman</div> <span className='caption'>Full-Stack Web Developer</span>
               <br/><br/><br/><br/>
               <div className='icons'>
                 <a href='https://www.linkedin.com/in/rachelruderman/' target='_blank'>
@@ -23,7 +23,12 @@ class App extends Component {
               </div>
             </div>
             <div className='item right'>
-              right flex item
+              <div className='square about'>item 1</div>
+              <div className='square portfolio'>item 2</div>
+            </div>
+            <div className='item right'>
+              <div className='square services'>item 3</div>
+              <div className='square contact'>item 4</div>
             </div>
         </div>
       </div>
