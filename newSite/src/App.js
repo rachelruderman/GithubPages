@@ -24,14 +24,28 @@ class App extends Component {
             </div>
             <div className='item right'>
               <div className='square about'>
-                <div className='overlay'>About Me</div>
-                item 1
+                <div className='overlay'>
+                  {/* <img src='./user.png' alt='woman'/> */}
+                  <div>About Me</div>
+                </div>
               </div>
-              <div className='square portfolio'>item 2</div>
+              <div className='square services'>
+                <div className='overlay'>
+                  <div>Services</div>
+                </div>
+              </div>
             </div>
             <div className='item right'>
-              <div className='square services'>item 3</div>
-              <div className='square contact'>item 4</div>
+              <div className='square portfolio'>
+                <div className='overlay'>
+                  <div>Portfolio</div>
+                </div>
+              </div>
+              <div className='square contact'>
+                <div className='overlay'>
+                  <div>Contact</div>
+                </div>
+              </div>
             </div>
         </div>
       </div>
