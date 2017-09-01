@@ -23,7 +23,10 @@ class App extends Component {
               </div>
             </div>
             <div className='item right'>
-              <div className='square about'>item 1</div>
+              <div className='square about'>
+                <div className='overlay'>About Me</div>
+                item 1
+              </div>
               <div className='square portfolio'>item 2</div>
             </div>
             <div className='item right'>
