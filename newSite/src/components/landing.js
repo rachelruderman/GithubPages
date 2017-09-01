@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Redirect, Switch, Link} from 'react-router-dom';
 
 class LandingPage extends Component {
   render(){
@@ -21,29 +21,28 @@ class LandingPage extends Component {
             </div>
           </div>
           <div className='item right'>
-            <div className='square about'>
+            <Link className='square about' to='/about'>
               <div className='overlay'>
-                {/* <img src='./user.png' alt='woman'/> */}
                 <div>About Me</div>
               </div>
-            </div>
-            <div className='square services'>
+            </Link>
+            <Link className='square services' to='/services'>
               <div className='overlay'>
                 <div>Services</div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className='item right'>
-            <div className='square portfolio'>
+            <Link className='square portfolio' to='/portfolio'>
               <div className='overlay'>
                 <div>Portfolio</div>
               </div>
-            </div>
-            <div className='square contact'>
+            </Link>
+            <Link className='square contact' to='/contact'>
               <div className='overlay'>
                 <div>Contact</div>
               </div>
-            </div>
+            </Link>
           </div>
       </div>
     )
