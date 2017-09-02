@@ -1,5 +1,5 @@
 /*
---------------------------------------------------------* 
+--------------------------------------------------------*
 
 [Boots4, Main Stylesheet ]
 
@@ -519,8 +519,8 @@ body {
     color: #4b4b4b;
     display: block;
     font-family: 'Playfair Display', serif;
-    padding-left: 50px;
-    margin-bottom: -15px;
+    margin-left: -50px;
+    margin-bottom: 1px;
     font-size: 35px;
     font-weight: 700;
 }
@@ -593,10 +593,6 @@ body {
 
 .four_nav_item.menu > div {
     height: 50%;
-}
-
-.six_nav_item.menu > div {
-    height: 33.33%;
 }
 
 .menu > div {
@@ -949,8 +945,8 @@ body {
     z-index: 1;
     -webkit-transform: rotateY(-180deg);
     -ms-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);  
-    transform: rotateY(-180deg);  
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
     background-color: #f4f4f4;
 }
 
@@ -974,7 +970,7 @@ body {
 }
 
 .flip-container:hover .back {
-    z-index: 2;   
+    z-index: 2;
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
@@ -1308,7 +1304,7 @@ body {
     color: #7b51b3;
 }
 
-.panel-group .panel.panel-default .panel-heading .panel-title a:active .panel-group .panel.panel-default .panel-heading, 
+.panel-group .panel.panel-default .panel-heading .panel-title a:active .panel-group .panel.panel-default .panel-heading,
 .panel-group .panel.panel-default .panel-heading .panel-title a:focus .panel-group .panel.panel-default .panel-heading {
     border-bottom: none;
  }
@@ -1627,5 +1623,5 @@ button#cfsubmit:hover {
     .about-us-desc p:first-child {
         margin: 20px 0px;
     }
-    
+
 }
