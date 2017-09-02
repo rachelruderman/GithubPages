@@ -994,7 +994,7 @@ body {
     line-height: 22px;
 }
 
-.price-box .pricing-catagory-name {
+.price-box .pricing-category-name {
     color: #000;
     margin-bottom: 10px;
 }
@@ -1034,11 +1034,11 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.price-catagory:hover .price-box {
+.price-category:hover .price-box {
     border: 1px solid #ed1c24;
 }
 
-.price-catagory:hover .price-box .btn {
+.price-category:hover .price-box .btn {
     background-color: transparent;
     color: #ed1c24;
     border: 1px solid #ed1c24;
