@@ -647,6 +647,11 @@ body {
 }
 
 .menu > div h2 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 35px;
