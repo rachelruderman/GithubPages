@@ -1252,6 +1252,12 @@ blockquote:last-child {
     text-align: center;
     font-size: 23px;
     font-weight: 600;
+}
+
+.popup-content h5 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
     margin-bottom: 15px;
 }
 
