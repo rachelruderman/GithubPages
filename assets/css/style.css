@@ -818,6 +818,18 @@ body {
     font-size: 17px;
 }
 
+.recommendation {
+  font-family: 'Times New Roman';
+}
+
+.recommendation {
+  font-size: 30px;
+}
+
+.recommendation span {
+  font-size: 200px;
+}
+
 .about-us-desc p:last-child {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
