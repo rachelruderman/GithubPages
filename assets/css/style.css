@@ -1141,6 +1141,11 @@ blockquote:last-child {
 .project-controls {
     padding: 20px 0;
     text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .filter {
