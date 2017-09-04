@@ -184,7 +184,7 @@ $(document).ready(function () {
                     $('#contactForm textarea[name=message]').val('');
                 },
                 error: function (data) {
-                    alert("Error occurd! Please try again");
+                    alert("An error has occurred! Please try again");
                 }
             });
 
