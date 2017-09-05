@@ -1,7 +1,5 @@
 <?php
 
-	$to = 'raquel.rudermano@gmail.com';  // please change this email id to your email or company email
-
 	$errors = array();
 	// print_r($_POST);
 
@@ -40,13 +38,12 @@
 		die();
 	}
 
-
-
-	$name = $_POST['name'];
-	$email = $_POST['email'];
+	$to 		= "raquel.rudermano@gmail.com";  // please change this email id to your email or company email
+	$name 	= $_POST['name'];
+	$email 	= $_POST['email'];
 	$message = $_POST['message'];
-	$from = $email;
-	$subject = 'rachelruderman.com';
+	$from	 = $email;
+	$subject = "rachelruderman.com";
 
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
@@ -56,7 +53,6 @@
 	//send the email
 	$result = '';
 	if (mail ($to, $subject, $body, $headers)) {
-		debugger
 		$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
  		$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 		$result .= 'Thank You! I will be in touch';
