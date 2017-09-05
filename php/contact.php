@@ -46,7 +46,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$subject = 'Contact Form : Boots4 - First Ever Responsive HTML5 Template With Bootstrap 4';
+	$subject = 'rachelruderman.com';
 
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
@@ -56,6 +56,7 @@
 	//send the email
 	$result = '';
 	if (mail ($to, $subject, $body, $headers)) {
+		debugger
 		$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
  		$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 		$result .= 'Thank You! I will be in touch';
@@ -68,11 +69,10 @@
 	$result = '';
 	$result .= '<div class="alert alert-danger alert-dismissible" role="alert">';
 	$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-	$result .= 'Something bad happend when sending this message. Please try again later';
+	$result .= 'Something bad happened when sending this message. Please try again later';
 	$result .= '</div>';
 
 	echo $result;
 	die();
-
 
 ?>
