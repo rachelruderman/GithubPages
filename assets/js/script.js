@@ -184,7 +184,7 @@ $(document).ready(function () {
                     $('#contactForm textarea[name=message]').val('');
                 },
                 error: function (data) {
-                    alert("An error has occurred! Please try again");
+                    alert("Just kidding! This form isn't fully up and running just yet. In the meantime, message me on LinkedIn or check back again soon!");
                 }
             });
 

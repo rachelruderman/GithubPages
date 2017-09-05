@@ -62,7 +62,7 @@
 	$result = '';
 	$result .= '<div class="alert alert-danger alert-dismissible" role="alert">';
 	$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-	$result .= 'Something bad happened when sending this message. Please try again later';
+	$result .= "Just kidding! This form isn't fully up and running just yet. In the meantime, message me on LinkedIn or check back again soon!";
 	$result .= '</div>';
 
 	echo $result;
