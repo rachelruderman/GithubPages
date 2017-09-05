@@ -38,7 +38,6 @@
 		die();
 	}
 
-if(isset($_POST['submit'])){
 	$to 			= "raquel.rudermano@gmail.com";  // please change this email id to your email or company email
 	$name 		= $_POST['name'];
 	$email 		= $_POST['email'];
@@ -47,7 +46,6 @@ if(isset($_POST['submit'])){
 	$subject 	= "rachelruderman.com";
 	$body 		= "From: $name\n E-Mail: $email\n Message:\n $message";
 	$headers 	= "From: ".$from;
-}
 
 	//send the email
 	$result = '';
