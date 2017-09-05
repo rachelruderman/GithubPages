@@ -920,6 +920,9 @@ blockquote:last-child {
     top: 0px;
     left: 0px;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: column;
     align-items: center;
 }
