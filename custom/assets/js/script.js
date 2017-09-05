@@ -184,7 +184,7 @@ $(document).ready(function () {
                     $('#contactForm textarea[name=message]').val('');
                 },
                 error: function (data) {
-                    alert("An error has occurred :( Please try again");
+                    alert("An error has occurred! Please try again");
                 }
             });
 
@@ -217,23 +217,6 @@ $(document).ready(function () {
     });
 
     $('.contact-details .social-media [data-toggle="tooltip"]').tooltip();
-
-
-
-    /*----------------------script for owl carousel sponsors---------------------*/
-
-    $("#sponsor-list").owlCarousel({
-
-        autoPlay: 3000, //Set AutoPlay to 3 seconds
-        stopOnHover: true,
-        items : 3,
-        itemsDesktop: [1200,3],
-        itemsDesktopSmall: [991,3],
-        itemsTablet: [767,2],
-        itemsTabletSmall: [625,2],
-        itemsMobile: [479,1]
-    });
-
 
 
     // location redirect to first load
