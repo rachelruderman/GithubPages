@@ -182,7 +182,7 @@ $(document).ready(function () {
                     $('#contactForm input[name=name]').val('');
                     $('#contactForm input[name=email]').val('');
                     $('#contactForm textarea[name=message]').val('');
-                    alert("Thanks for reaching out! I'll be in touch shortly")
+                    alert("Thanks for reaching out! I'll be in touch shortly");
                 },
                 error: function (data) {
                     alert("Just kidding! This form isn't fully up and running just yet. In the meantime, message me on LinkedIn or check back again soon!");
