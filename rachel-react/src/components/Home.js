@@ -25,8 +25,26 @@ export default class Home extends Component {
             name:   'about',
             title:  'About Me',
             icon:   '',
-            backgroundImage:  '',
-        }
+            image:  'about1.gif',
+        },
+        {
+            name:   'service',
+            title:  'Services',
+            icon:   'ion-ios-lightbulb-outline hidden-xs',
+            image:  'service.jpg',
+        },
+        {
+            name:   'portfolio',
+            title:  'Portfolio',
+            icon:   'ion-ios-briefcase-outline hidden-xs',
+            image:  'portfolio.jpg',
+        },
+        {
+            name:   'contact',
+            title:  'Contact',
+            icon:   'ion-ios-email-outline hidden-xs',
+            image:  'contact.jpg',
+        },
     ];
 
   componentDidMount = () => {
@@ -45,7 +63,7 @@ export default class Home extends Component {
                   <div className="social-media">
                       {this.socialMediaLinks.map(socialMediaLink => {
                           const {title, href, icon} = socialMediaLink;
-                          return <a key={title} href={href} className={icon} data-toggle='tooltip' title={title} target='_blank'/>
+                          return <a key={title} href={href} className={icon} rel="noopener noreferrer" title={title} target='_blank'/>
                       })}
                   </div>
               </div>
@@ -56,50 +74,22 @@ export default class Home extends Component {
   renderNavigation = () => {
       return (
           <div className="four_nav_item menu">
-              {/*{this.navItems.map(navItem => {*/}
-                  {/*const {title, backgroundImage, icon, name} = navItem;*/}
-                  {/*return (*/}
-                      {/*<div data-url_target={name} className={`${name}-btn menu_button`}>*/}
-                          {/*<div className="mask" style={{backgroundImage}}/>*/}
-                          {/*<div className="heading">*/}
-                              {/*{icon ? <i className={icon}/> : <><br/><br/><br/></>}*/}
-                              {/*<h2>{title}</h2>*/}
-                          {/*</div>*/}
-                      {/*</div>*/}
-                  {/*)*/}
-              {/*})}*/}
-              <div data-url_target="about" className="profile-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('img/about1.gif')`}}/>
-                  <div className="heading">
-                      <br/><br/><br/>
-                      <h2>About Me</h2>
-                  </div>
-              </div>
+              {this.navItems.map(navItem => {
 
+                  const {title, image, icon, name}  = navItem;
+                  const backgroundImage             = `url('img/${image}')`;
+                  const onClick                     = () => this.props.history.push(`/${name}`);
 
-              <div data-url_target="service" className="service-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('img/service.jpg')`}}/>
-                  <div className="heading">
-                      <i className="ion-ios-lightbulb-outline hidden-xs"/>
-                      <h2>Services</h2>
-                  </div>
-              </div>
-
-              <div data-url_target="portfolio" className="portfolio-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('img/portfolio.jpg')`}}/>
-                  <div className="heading">
-                      <i className="ion-ios-briefcase-outline hidden-xs"/>
-                      <h2>Portfolio</h2>
-                  </div>
-              </div>
-
-              <div data-url_target="contact" className="contact-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('img/contact.jpg')`}}/>
-                  <div className="heading">
-                      <i className="ion-ios-email-outline hidden-xs"/>
-                      <h2>Contact</h2>
-                  </div>
-              </div>
+                  return (
+                      <div key={name} className={`${name}-btn menu_button`} onClick={onClick}>
+                          <div className="mask" style={{backgroundImage}}/>
+                          <div className="heading">
+                              {icon ? <i className={icon}/> : <><br/><br/><br/></>}
+                              <h2>{title}</h2>
+                          </div>
+                      </div>
+                  )
+              })}
           </div>
       )
   };
