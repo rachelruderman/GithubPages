@@ -11,7 +11,7 @@ class App extends Component {
         {
             title:  'LinkedIn',
             href:   'https://www.linkedin.com/in/rachelruderman',
-            icon:   'fab fa-linkedin fa-lg'
+            icon:   'fab fa-linkedin-in fa-lg'
         },
         {
             title:  'GitHub',
@@ -69,7 +69,7 @@ class App extends Component {
                   {/*)*/}
               {/*})}*/}
               <div data-url_target="about" className="profile-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('assets/img/about1.gif')`}}/>
+                  <div className="mask" style={{backgroundImage: `url('img/about1.gif')`}}/>
                   <div className="heading">
                       <br/><br/><br/>
                       <h2>About Me</h2>
@@ -78,7 +78,7 @@ class App extends Component {
 
 
               <div data-url_target="service" className="service-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('assets/img/service.jpg')`}}/>
+                  <div className="mask" style={{backgroundImage: `url('img/service.jpg')`}}/>
                   <div className="heading">
                       <i className="ion-ios-lightbulb-outline hidden-xs"/>
                       <h2>Services</h2>
@@ -86,7 +86,7 @@ class App extends Component {
               </div>
 
               <div data-url_target="portfolio" className="portfolio-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('assets/img/portfolio.jpg')`}}/>
+                  <div className="mask" style={{backgroundImage: `url('img/portfolio.jpg')`}}/>
                   <div className="heading">
                       <i className="ion-ios-briefcase-outline hidden-xs"/>
                       <h2>Portfolio</h2>
@@ -94,7 +94,7 @@ class App extends Component {
               </div>
 
               <div data-url_target="contact" className="contact-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('assets/img/contact.jpg')`}}/>
+                  <div className="mask" style={{backgroundImage: `url('img/contact.jpg')`}}/>
                   <div className="heading">
                       <i className="ion-ios-email-outline hidden-xs"/>
                       <h2>Contact</h2>
