@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+export default class Home extends Component {
 
     socialMediaLinks = [
         {
@@ -113,5 +113,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
