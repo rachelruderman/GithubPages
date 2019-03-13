@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css'
 
 class App extends Component {
 
@@ -23,10 +22,10 @@ class App extends Component {
 
     navItems = [
         {
-            name: 'about',
+            name:   'about',
             title:  'About Me',
+            icon:   '',
             backgroundImage:  '',
-            icon:   ''
         }
     ];
 

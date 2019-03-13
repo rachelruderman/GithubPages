@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import 'Home.scss';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  overflow-x: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #343333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body,
+textarea,
+button,
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.42;
+}
+
+h1 {
+  font-size: 5.063em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3.375em;
+  font-weight: 400;
+
+  &.small-heading {
+    padding: 60px 0 10px 0;
+    font-size: 2.25em;
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+    text-align: center;
+
+    &:after {
+      position: absolute;
+      font-family: 'FontAwesome';
+      font-size: 35px;
+      content: "\f107";
+      left: 50%;
+      bottom: -28px;
+      color: #073a63;
+      background-color: #ffffff;
+      padding: 0px 8px;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+
+    &:before {
+      position: absolute;
+      bottom: -10px;
+      content: "";
+      height: 2px;
+      background-color: #073a63;
+      display: block;
+      width: 23%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+  }
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 400;
+}
