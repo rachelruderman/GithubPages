@@ -3,6 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  componentDidMount = () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) preloader.style.display = 'none';
+  };
+
   render() {
     return (
       <div className="App">
