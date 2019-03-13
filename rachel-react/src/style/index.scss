@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 @import 'Home/_import.scss';
+@import 'Pages/_import.scss';
+
+@import 'media-queries';
 
 html {
   font-size: 16px;
@@ -96,4 +100,16 @@ h2 {
 h3 {
   font-size: 2.25em;
   font-weight: 400;
+}
+
+.close-btn {
+  background: url(../img/close.png);
+  z-index: 1000;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 3%;
+  top: 30px;
+  background-size: cover;
 }
