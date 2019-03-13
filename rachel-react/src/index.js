@@ -3,18 +3,22 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-import Services from './components/Services';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import Portfolio from './components/pages/Portfolio';
+import Services from './components/pages/Services';
 
 import './style/index.scss';
 import './style/ionicons.min.css';
 import './style/magnific-popup.css';
 import './style/style.css';
 
+const preloader = document.getElementById('preloader');
+if (preloader) preloader.style.display = 'none';
+
 ReactDOM.render(
     <BrowserRouter>
+
         <Switch>
             <Route exact path='/'          component={ Home }       />
             <Route exact path='/about'     component={ About }      />
@@ -23,6 +27,7 @@ ReactDOM.render(
             <Route exact path='/services'  component={ Services }   />
             <Redirect to='/'/>
         </Switch>
+
     </BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

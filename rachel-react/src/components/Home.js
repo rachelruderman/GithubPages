@@ -47,11 +47,6 @@ export default class Home extends Component {
         },
     ];
 
-  componentDidMount = () => {
-    const preloader = document.getElementById('preloader');
-    if (preloader) preloader.style.display = 'none';
-  };
-
   renderIntroduction = () => {
       return (
           <div className="introduction text_logo_intro">
