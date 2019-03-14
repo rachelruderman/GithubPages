@@ -9,6 +9,7 @@ class PageWrapper extends Component {
         return (
             <div className={`page-wrapper ${window.location.pathname.replace('/', '')}`}>
                 <div className='content'>{children}</div>
+                <div className='sidebar-dummy'/>
                 <div className='sidebar' style={{backgroundImage}}>
                     <div className="main-heading">
                         <h1>{title}</h1>
