@@ -7,14 +7,13 @@ import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Portfolio from './components/pages/Portfolio';
 import Services from './components/pages/Services';
-
+import {hidePreloader} from "./util/hidePreloader";
 import './style/index.scss';
 import './style/ionicons.min.css';
 import './style/magnific-popup.css';
 import './style/style.css';
 
-const preloader = document.getElementById('preloader');
-if (preloader) preloader.style.display = 'none';
+hidePreloader();
 
 ReactDOM.render(
     <BrowserRouter>

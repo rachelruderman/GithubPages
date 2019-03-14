@@ -6,6 +6,7 @@
     bottom: 0;
     background-color: #1a1b23;
     z-index: 10000;
+    transition: opacity 0.2s linear;
 }
 
 .loader {
