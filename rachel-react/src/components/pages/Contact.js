@@ -69,7 +69,7 @@ export default class Contact extends Component {
                   {/*)*/}
               {/*})}*/}
               <div data-url_target="about" className="profile-btn menu_button">
-                  <div className="mask" style={{backgroundImage: `url('img/about1.gif')`}}/>
+                  <div className="mask" style={{backgroundImage: `url('img/about1-grayscale.jpeg')`}}/>
                   <div className="heading">
                       <br/><br/><br/>
                       <h2>About Me</h2>

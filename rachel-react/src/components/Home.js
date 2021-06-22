@@ -25,7 +25,7 @@ export default class Home extends Component {
             name:   'about',
             title:  'About Me',
             icon:   '',
-            image:  'about1.gif',
+            image:  'about1-grayscale.jpeg',
         },
         {
             name:   'service',
