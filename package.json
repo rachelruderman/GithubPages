@@ -1,13 +1,11 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "repository": "https://github.com/rachelruderman/rachelruderman.github.io.git",
   "author": "Rachel Ruderman <raquel.rudermano@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
-  },
+  "scripts": {},
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -18,8 +16,7 @@
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.3.1",
-    "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
-  }
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {}
 }
