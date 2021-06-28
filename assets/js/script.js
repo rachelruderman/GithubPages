@@ -106,7 +106,7 @@ $(document).ready(function () {
     // Hide Menu
     $('.menu').on('click', '.menu_button' , function () {
         hideBoots4Menu();
-    }, { passive: true });
+    });
 
 
     // Show Reletive Page Onclick
@@ -116,7 +116,7 @@ $(document).ready(function () {
         window.location.hash = selectedPage;
         $('#'+selectedPage).fadeIn(1200);
         $(window).scrollTop(0);
-    }, { passive: true });
+    });
 
 
     $('.menu').on('click', 'div.profile-btn', function () {
