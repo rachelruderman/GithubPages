@@ -90,7 +90,7 @@ export default class About extends Component {
 
   render() {
     return (
-        <PageWrapper image={'about2.gif'} title={'About Me'}>
+        <PageWrapper image={'about2.png'} title={'About Me'}>
             {this.renderHeader()}
             {this.renderDescription()}
             {this.renderReference()}
