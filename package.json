@@ -5,9 +5,18 @@
   "repository": "https://github.com/rachelruderman/rachelruderman.github.io.git",
   "author": "Rachel Ruderman <raquel.rudermano@gmail.com>",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "format": "eslint --ext .js assets/js/* --fix && prettier --write ."
+  },
   "dependencies": {
     "jquery": "^3.6.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.3.2",
+    "prettier-eslint": "^12.0.0"
+  }
 }
