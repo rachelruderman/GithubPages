@@ -1,0 +1,82 @@
+/* ( c ) Navigation Menu */
+
+.menu {
+  float: left;
+  padding: 0;
+  position: relative;
+  background: #000;
+}
+
+.four_nav_item.menu > li {
+  height: 50%;
+}
+
+.menu > li {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu_button:hover .mask {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: -webkit-transform 1s linear;
+  -moz-transition: -moz-transform 1s linear;
+  -ms-transition: -ms-transform 1s linear;
+  -o-transition: -o-transform 1s linear;
+  transition: transform 1s linear;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.heading i {
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: block;
+  font-size: 25px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto auto 10px;
+  text-align: center;
+  width: 60px;
+  -webkir-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu > li:hover .heading i {
+  box-shadow: 0 0 0 50px rgba(256, 256, 256, 0);
+}
+
+.menu > li h2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.menu > li h2 span {
+  color: #00b796;
+}
