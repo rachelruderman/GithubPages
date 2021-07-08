@@ -16,7 +16,7 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("./loading.css");
-@import url("./nav-menu.css");
+@import url("./nav.css");
 
 html {
   font-size: 16px;
