@@ -24,12 +24,12 @@ $(document).ready(() => {
     if (windowsWidth > 767) {
       $(".introduction , .menu").css({
         width: "50%",
-        height: "100%"
+        height: "100%",
       });
     } else {
       $(".introduction , .menu").css({
         width: "100%",
-        height: "50%"
+        height: "50%",
       });
     }
 
@@ -47,7 +47,7 @@ $(document).ready(() => {
             }); */
       menuBgImages.css({
         width: "100%",
-        height: "auto"
+        height: "auto",
       });
     } else {
       /* bgImage.css({
@@ -56,7 +56,7 @@ $(document).ready(() => {
             }); */
       menuBgImages.css({
         width: "100%",
-        height: "100%"
+        height: "100%",
       });
     }
   }
@@ -81,20 +81,20 @@ $(document).ready(() => {
 
     $(".introduction").animate(
       {
-        left: `-${introWidth}`
+        left: `-${introWidth}`,
       },
       1000,
       "easeOutQuart"
     );
     $(".menu").animate(
       {
-        left: menuWidth
+        left: menuWidth,
       },
       1000,
       "easeOutQuart",
       () => {
         $(".home-page").css({
-          display: "none"
+          display: "none",
         });
       }
     );
@@ -121,14 +121,14 @@ $(document).ready(() => {
           .prop("Counter", 0)
           .animate(
             {
-              Counter: $(this).text()
+              Counter: $(this).text(),
             },
             {
               duration: 1500,
               easing: "swing",
               step(now) {
                 $(this).text(Math.ceil(now));
-              }
+              },
             }
           );
       });
@@ -147,35 +147,10 @@ $(document).ready(() => {
         delegate: "a",
         type: "image",
         gallery: {
-          enabled: true
-        }
+          enabled: true,
+        },
       });
     }, 100);
-  });
-
-  /*= ==============================================================
-                Working Contact Form
-    ================================================================ */
-
-  $("#contactForm").submit(function (e) {
-    e.preventDefault();
-    const $ = jQuery;
-
-    const postData = $(this).serializeArray();
-    const formURL = $(this).attr("action");
-    const $cfResponse = $("#contactFormResponse");
-    const $cfsubmit = $("#cfsubmit");
-    const cfsubmitText = $cfsubmit.text();
-
-    $cfsubmit.text("Sending...");
-
-
-        alert(
-          "Just kidding! This form isn't fully up and running just yet. In the meantime, message me on LinkedIn or check back again soon!"
-        );
-    });
-
-    return false;
   });
 
   // Close Button, Hide Menu
@@ -183,11 +158,11 @@ $(document).ready(() => {
   $("body").on("click", ".close-btn", () => {
     window.location.hash = "";
     $(".home-page").css({
-      display: "block"
+      display: "block",
     });
     $(".introduction, .menu").animate(
       {
-        left: 0
+        left: 0,
       },
       1000,
       "easeOutQuart"
@@ -202,7 +177,7 @@ $(document).ready(() => {
        ----------------------------------------  */
 
   $('.intro-content .social-media [data-toggle="tooltip"]').tooltip({
-    placement: "bottom"
+    placement: "bottom",
   });
 
   $('.contact-details .social-media [data-toggle="tooltip"]').tooltip();
@@ -216,6 +191,6 @@ $(document).ready(() => {
   /* --------------popup------------*/
   $(".open-popup-link").magnificPopup({
     type: "inline",
-    midClick: true
+    midClick: true,
   });
 });
