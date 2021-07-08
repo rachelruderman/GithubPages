@@ -6,7 +6,7 @@
   "author": "Rachel Ruderman <raquel.rudermano@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "format": "eslint --ext .js assets/js/* --fix && prettier --write ."
+    "format": "eslint --ext .js src/js/* --fix && prettier --write ."
   },
   "dependencies": {
     "jquery": "^3.6.0"
