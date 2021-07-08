@@ -847,67 +847,6 @@ button#cfsubmit:hover {
   height: 250px;
 }
 
-/*-------------
-   13 ) Footer
-  -------------*/
-
-.footer {
-  padding: 20px 0px 10px 0px;
-}
-
-.profile-page .footer {
-  background-color: #01213b;
-}
-
-.portfolio-page .footer {
-  background-color: #004824;
-}
-
-.service-page .footer {
-  background-color: #761616;
-}
-
-.gallery-page .footer {
-  background-color: rgba(42, 56, 98, 0.93);
-}
-
-.faq-page .footer {
-  background-color: #3c2d50;
-}
-
-.contact-page .footer {
-  background-color: #935b25;
-}
-
-.footer .copyright {
-  color: #fff;
-  float: left;
-}
-
-.footer .author {
-  float: right;
-  line-height: 1;
-  color: #fff;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #5f9ea0;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-
-.contact-page .footer a {
-  color: #f1ad5c;
-}
-
-.footer a:hover {
-  color: #f4f4f4;
-}
-
 /*=============================================
                 Media query
 ===============================================*/
@@ -1001,17 +940,6 @@ button#cfsubmit:hover {
 
   .menu > li h2 {
     font-size: 18px;
-  }
-
-  .footer .copyright {
-    float: none;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer .author {
-    float: none;
-    text-align: center;
   }
 
   .mfp-content .mfp-close {
